@@ -20,11 +20,12 @@ class speedtestShipper(object):
 
     def __init__(self, verbose):
 
+
         print("[1] Authenticating with AWS.")
         self.auth_with_aws()
         print("[2] Running SpeedtestCLI.")
         self.get_data()
-        print(self.data)
+        print(self.dictdata)
         print("[3] Connection to ES.")
         self.connect_to_es()
         #self.test_this()
@@ -56,10 +57,12 @@ class speedtestShipper(object):
     def get_data(self):
         #self.data = os.system("speedtest -f json")  
         self.data = subprocess.run(['speedtest', '-f', 'json'], stdout=subprocess.PIPE).stdout.decode('utf-8')
+        self.dictdata = { self.data }
+        #self.dictdata.update( {'Source' : config.ES_INDEX['source']} )
 
     def push_data_to_index(self):
         self.esClient.index(
             index=config.ES_INDEX['index'],
             doc_type=config.ES_INDEX['doc_type'],
-            body=self.data
+            body=self.dictdata
             )
