@@ -7,7 +7,6 @@
 </p>
 
 ![Version](https://img.shields.io/badge/Version-1.0.1-lightgrey.svg" alt="Version 1.0.1)
-![EWS Python](https://github.com/coreysabia/AWS-Elasticsearch-Web-Performance-Shipper/workflows/EWS%20Python/badge.svg?branch=master)
 
 
 <p align="center">
