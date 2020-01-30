@@ -168,7 +168,16 @@ ES_INDEX = {
     'source': ''
 }
 ```
-5. Run `./run.py` and you're off!
+
+5. Install the [Speedtest CLI](https://www.speedtest.net/apps/cli) using the workflow specific to your OS:
+    - On macOS: `brew install speedtest --force`
+        - Tap the Speedtest CLI by running the command: `brew tap teamookla/speedtest`
+        - Update Homebrew by running: `brew update`
+        - Install the Speedtest CLI by running: `brew install speedtest --force`
+        - Confirm it installed by running: `speedtest --version`
+    - For more OSs please reference the [Speedtest Website](https://www.speedtest.net/apps/cli).
+
+6. Run `./run.py` and you're off!
 
 ## Dependencies
 
