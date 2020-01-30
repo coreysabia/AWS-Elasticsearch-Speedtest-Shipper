@@ -1,6 +1,6 @@
 # AWS Elasticsearch Speedtest Data Shipper
 
-<p align="center">
+<p align="left">
     <a href="https://www.python.org/downloads/">
         <img src="https://img.shields.io/badge/Made%20With-Python%203.7-blue.svg?style=for-the-badge" alt="Made with Python 3.7">
     </a>
@@ -9,10 +9,8 @@
 ![Version](https://img.shields.io/badge/Version-1.0.1-lightgrey.svg)
 
 
-<p align="center">
  Programatically ship Speedtest CLI results to an AWS Elasticsearch Service from an endpoint of your choosing.
  This project is currently under Development. Please check back soon.
-</p>
 
 ## Table of Contents
 
