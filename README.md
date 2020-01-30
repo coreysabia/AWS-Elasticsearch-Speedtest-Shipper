@@ -6,7 +6,7 @@
     </a>
 </p>
 
-![Version](https://img.shields.io/badge/Version-1.0.1-lightgrey.svg" alt="Version 1.0.1)
+![Version](https://img.shields.io/badge/Version-1.0.1-lightgrey.svg)
 
 
 <p align="center">
