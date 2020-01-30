@@ -14,6 +14,7 @@
 
 <p align="center">
  Programatically ship Speedtest CLI results to an AWS Elasticsearch Service from an endpoint of your choosing.
+ This project is currently under Development. Please check back soon.
 </p>
 
 ## Table of Contents
