@@ -1,4 +1,4 @@
-# AWS-Elasticsearch-Speedtest-Shipper
+# AWS Elasticsearch Speedtest Data Shipper
 
 <p align="center">
     <a href="https://www.python.org/downloads/">
@@ -13,7 +13,7 @@
 
 
 <p align="center">
- Programatically ship Speedtest CLI results to an AWS Elasticsearch Service endpoint.
+ Programatically ship Speedtest CLI results to an AWS Elasticsearch Service from an endpoint of your choosing.
 </p>
 
 ## Table of Contents
@@ -33,6 +33,7 @@
   - [Meet the Team](#meet-the-team)
 
 ## Overview
+A python script which uses the [Speedtest CLI](https://www.speedtest.net/apps/cli) to programatically ship results to an AWS Elasticsearch Service from an endpoint.
 
 ## Project Structure
 
@@ -90,8 +91,14 @@ ES_INDEX = {
     'source': ''
 }
 ```
-5. 
-6. 
+5. Install the [Speedtest CLI](https://www.speedtest.net/apps/cli) using the workflow specific to your OS:
+    - On macOS: `brew install speedtest --force`
+        - Tap the Speedtest CLI by running the command: `brew tap teamookla/speedtest`
+        - Update Homebrew by running: `brew update`
+        - Install the Speedtest CLI by running: `brew install speedtest --force`
+        - Confirm it installed by running: `speedtest --version`
+    - For more OSs please reference the [Speedtest Website](https://www.speedtest.net/apps/cli).
+
 
 #### With Docker
 
