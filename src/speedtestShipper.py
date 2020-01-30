@@ -57,7 +57,7 @@ class speedtestShipper(object):
     def get_data(self):
         #self.data = os.system("speedtest -f json")  
         self.data = subprocess.run(['speedtest', '-f', 'json'], stdout=subprocess.PIPE).stdout.decode('utf-8')
-        self.dictdata = { self.data }
+        self.dictdata = self.data
         #self.dictdata.update( {'Source' : config.ES_INDEX['source']} )
 
     def push_data_to_index(self):
